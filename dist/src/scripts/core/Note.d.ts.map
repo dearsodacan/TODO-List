@@ -1,0 +1,1 @@
+{"version":3,"file":"Note.d.ts","sourceRoot":"","sources":["../../../../src/scripts/core/Note.js"],"names":[],"mappings":"AAIA;IAUE,gBAAiB,aAAQ,UAAwB;IAEjD,cAAe,eAAU,EAAE,gBAAW,UAIpC;IAEF,gBAAiB,gBAAW,EAAE,eAAU,UAMtC;IAEF,gBAAiB,gBAAW,EAAE,eAAU,EAAE,YAAO,UAI/C;IAEF,qBAAsB,eAAU,YAE9B;IAjCF;;;;;OAOC;IAJC,aAAsB;IACtB,WAAkB;IAClB,iBAA8B;IAC9B,cAAwB;CA4B3B;yBAtCwB,eAAe"}
