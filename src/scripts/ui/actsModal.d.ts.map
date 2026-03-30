@@ -1,0 +1,1 @@
+{"version":3,"file":"actsModal.d.ts","sourceRoot":"","sources":["../../../../src/scripts/ui/actsModal.ts"],"names":[],"mappings":"AAAA,UAAU,UAAU;IAClB,MAAM,CAAC,QAAQ,EAAE,gBAAgB,GAAG,IAAI,CAAC;IACzC,iBAAiB,IAAI,IAAI,CAAC;CAC3B;AAED,qBAAa,KAAM,YAAW,UAAU;IAC1B,OAAO,CAAC,SAAS;gBAAT,SAAS,EAAE,cAAc;IAE7C,MAAM,CAAC,QAAQ,EAAE,gBAAgB;IASjC,iBAAiB;CAWlB"}
