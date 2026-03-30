@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+  </head>
+  <body>
+    <main>
+      <h1>TODO App</h1>
+
+      <div class="todo-component">
+        <nav class="todo-nav" id="todoNav">
+          <button
+            type="button"
+            class="btn todo-nav__btn-add"
+            id="todoNavAddBtn"
+          >
+            New
+          </button>
+        </nav>
+
+        <ul class="todo-groups" id="todoGroups">
+          <li class="todo-group" data-group="">
+            <span class="todo-group__title">Group Title</span>
+            <button
+              type="button"
+              class="btn todo-group__btn-actions"
+              data-for-group=""
+            >
+              ...
+            </button>
+          </li>
+        </ul>
+
+        <!-- Add new group modal section -->
+        <dialog id="newGroupModal">
+          <form method="dialog" id="newGroupForm">
+            <label for="newGroupInput">
+              <input type="text" id="newGroupInput" required />
+            </label>
+
+            <button type="submit" id="newGroupSubmitBtn">Submit</button>
+          </form>
+        </dialog>
+
+        <!-- Each group actions modal -->
+        <dialog id="actsModal">
+          <form method="dialog" id="actsForm">
+            <div id="actsBtnsBlock">
+              <button data-for-content="rename">Rename</button>
+              <button data-for-content="delete">Delete</button>
+            </div>
+            <div id="actsContentBlock"></div>
+          </form>
+        </dialog>
+      </div>
+    </main>
+  </body>
+</html>
