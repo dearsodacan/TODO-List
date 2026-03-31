@@ -10,7 +10,8 @@ export class Modal implements ModalInter {
     const submitButton = document.createElement('button');
     submitButton.type = 'submit';
     submitButton.id = 'actSubmitBtn';
-    
+    submitButton.textContent = 'Submit';
+
     this.container.appendChild(actLabel);
     this.container.appendChild(submitButton);
   }

@@ -1,6 +1,6 @@
 import { Group } from '../core/Group.js';
 import { Storage } from '../core/StorageAPI.js';
-import { modal as actsModal } from './actsModalHandlers';
+import { modal as actsModal, lastModalCaller } from './actsModalHandlers';
 
 interface NavigationInter {
   add(input: string, options?: { sync: boolean }): void;
@@ -25,9 +25,9 @@ export class Navigation implements NavigationInter {
     const button = document.createElement('button');
     button.classList.add('btn', 'todo-group__btn-actions');
     button.type = 'button';
-    button.addEventListener('click', (event) => {
-      const target = event.target;
+    button.addEventListener('click', () => {
       actsModal.showModal();
+      lastModalCaller.caller = button;
     });
 
     li.appendChild(span);

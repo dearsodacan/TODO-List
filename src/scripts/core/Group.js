@@ -23,12 +23,17 @@ export class Group extends Services {
   static rename = (targetName, newName) => {
     const targetObject = super.getGroups();
 
+    console.log(targetObject);
+    
+    debugger
     Object.defineProperty(targetObject, newName, {
       value: targetObject[targetName],
 
+      configurable: true,
       enumerable: true,
       writable: true,
     });
+
     delete targetObject[targetName];
 
     Storage.sync();
