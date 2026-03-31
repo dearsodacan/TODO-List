@@ -1,1 +1,1 @@
-{"version":3,"file":"Group.d.ts","sourceRoot":"","sources":["../../../../src/scripts/core/Group.js"],"names":[],"mappings":"AAGA;IACE,gBAAiB,SAAI;;;MAGlB;IAEH,cAAe;;;KAAyB,UAGtC;IAEF,gBAAiB,cAAS,UAIxB;IAEF,iBAAkB,gBAAW,SAAsB;IAEnD,gBAAiB,eAAU,EAAE,YAAO,UAYlC;CACH;yBAlCwB,eAAe"}
+{"version":3,"file":"Group.d.ts","sourceRoot":"","sources":["../../../../src/scripts/core/Group.js"],"names":[],"mappings":"AAGA;IACE,gBAAiB,SAAI;;;MAGlB;IAEH,cAAe;;;KAAyB,UAGtC;IAEF,gBAAiB,cAAS,UAIxB;IAEF,iBAAkB,gBAAW,SAAsB;IAEnD,gBAAiB,eAAU,EAAE,YAAO,UAiBlC;CACH;yBAvCwB,eAAe"}
