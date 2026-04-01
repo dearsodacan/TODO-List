@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>TODO List</title>
   </head>
   <body>
@@ -14,7 +17,7 @@
           <button
             type="button"
             class="btn todo-nav__btn-add"
-            id="todoNavAddBtn"
+            id="todoNavNewBtn"
           >
             New
           </button>
@@ -31,6 +34,8 @@
               ...
             </button>
           </li>
+
+          
         </ul>
 
         <!-- Add new group modal section -->
@@ -40,18 +45,61 @@
               <input type="text" id="newGroupInput" required />
             </label>
 
-            <button type="submit" id="newGroupSubmitBtn">Submit</button>
+            <button type="submit" id="newGroupSubmitBtn">
+              Submit
+            </button>
           </form>
         </dialog>
 
         <!-- Each group actions modal -->
         <dialog id="actsModal">
-          <form method="dialog" id="actsForm" data-action-statuc="wait">
+          <form
+            method="dialog"
+            id="actsForm"
+            data-action-status="wait"
+          >
             <div id="actsBtnsBlock">
-              <button type="button" data-for-content="rename">Rename</button>
-              <button type="button" data-for-content="delete">Delete</button>
+              <button type="button" data-for-content="rename">
+                Rename
+              </button>
+              <button type="button" data-for-content="delete">
+                Delete
+              </button>
             </div>
             <div id="actsContentBlock"></div>
+          </form>
+        </dialog>
+
+        <!-- Add new note modal -->
+        <dialog id="newNoteModal">
+          <form method="dialog" id="newNoteForm">
+            <label for="newNoteTitle"
+              >Title
+              <input type="text" id="newNoteTitle" />
+            </label>
+
+            <label for="newNoteDesc"
+              >Description
+              <input type="text" id="newNoteDesc" />
+            </label>
+
+            <label for="newNotePriority"
+              >Priority
+              <select id="newNotePriority">
+                <option value="">Select priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">low</option>
+                <option value="noPriority">No priority</option>
+              </select>
+            </label>
+            <label for="newNoteDueDate">
+              <input type="date" id="newNoteDueDate" min="" />
+            </label>
+
+            <button type="submit" id="newNoteSubmitBtn">
+              Submit
+            </button>
           </form>
         </dialog>
       </div>
