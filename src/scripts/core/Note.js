@@ -1,6 +1,7 @@
 import { formatDistanceToNowStrict } from "date-fns";
 import { Services } from "./Services.js";
 import { Storage } from "./StorageAPI.js";
+import { log } from "../shared/logger.ts";
 
 export class Note extends Services {
   constructor({ title, description, dueDate, priority }) {
@@ -16,7 +17,8 @@ export class Note extends Services {
 
   static push = (targetNote, targetGroup) => {
     super.getGroup(targetGroup).push(targetNote);
-
+    console.log(super.getSource());
+    
     Storage.sync();
   };
 
